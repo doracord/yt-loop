@@ -2,6 +2,12 @@
 
 import { useState } from 'react'
 import YouTubePlayer from '@/components/YouTubePlayer'
+import { Metadata } from 'next'
+
+export const MetaData: Metadata = {
+  title: "YouTube Loop",
+  description: "Simple YouTube video looper"
+}
 
 export default function Home() {
   const [url, setUrl] = useState('')
